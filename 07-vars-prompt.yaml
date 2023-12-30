@@ -6,7 +6,7 @@
       private: false #they can see wt u are typing
     - name: PASSWORD
       prompt: "please enter your PASSWORD"
-      privte: true #they can't see what u are typing
+      private: true #they can't see what u are typing
   tasks:
     - name: print and check values
       ansible.builtin.debug:
