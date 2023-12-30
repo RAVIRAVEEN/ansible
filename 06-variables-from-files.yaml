@@ -1,4 +1,3 @@
-# PLAY LEVEL VARIABLE
 
 - name: variables 
   hosts: localhost
