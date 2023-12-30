@@ -8,6 +8,6 @@
       prompt: "please enter your PASSWORD"
       private: true #they can't see what u are typing
   tasks:
-    - name: print and check values
-      ansible.builtin.debug:
-      msg: "username is: {{USERNAME}},  password is: {{PASSWORD}}"
+     - name: print and check value
+       ansible.builtin.debug:
+        msg: "username is: {{USERNAME}},  password is: {{PASSWORD}}"
