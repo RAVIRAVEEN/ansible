@@ -7,8 +7,8 @@
     trainer: "ravi"
     duration: "10000"
   tasks:
-   vars:
-   course: "devops"
-- name: check variables 
-  ansible.builtin.debug:
-  msg: "hai im learning {{course}}, my trainer is {{trainer}}, duration is {{duration}}"
+  - name: check variables 
+    vars:
+    course: "devops" 
+    ansible.builtin.debug:
+    msg: "hai im learning {{course}}, my trainer is {{trainer}}, duration is {{duration}}"
