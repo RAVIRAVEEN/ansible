@@ -2,13 +2,9 @@
 
 - name: variables 
   hosts: localhost
-  vars:
-    course: "code"
-    trainer: "ravi"
-    duration: "10000"
+  vars_files:
+   variables.yaml 
   tasks:
   - name: check variables 
-    vars: #task level
-     course: "devops" 
     ansible.builtin.debug:
      msg: "hai im learning {{course}}, my trainer is {{trainer}}, duration is {{duration}}"
