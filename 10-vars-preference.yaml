@@ -15,7 +15,7 @@
      WISHES: "mrng  FROM TASK"
   tasks:
    - name: check variables
-     vars:
+     # vars:
       #  PERSON: "ravi  FROM PLAY"
       #  WISHES:  "mrng  FROM PLAY"
      ansible.builtin.debug:
