@@ -2,6 +2,6 @@
 - name: variables 
   hosts: localhost
   tasks:
-   - name: check variables 
+   - name: check variables from playbook 
      ansible.builtin.debug:
        msg: "hai im learning {{course}}, my trainer is {{trainer}}     duration is {{duration}}"
