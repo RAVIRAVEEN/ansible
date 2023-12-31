@@ -4,8 +4,8 @@
   tasks:
   - name: install or uninstall packages
     ansible.builtin.package:
-       name: "{{item}}" #default key word
-       state: present
+       name: "{{item.name}}" #default key word
+       state: "{{item.state}}"
     loop:
     - {name: 'git', state: 'present'}
     - {name: 'postfix', state: 'absent'} 
