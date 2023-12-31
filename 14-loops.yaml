@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install or uninstall packages
-    ansible.builtin.package:
+    ansible.builtin.dnf:
       msg: "{{item}}" #default key word
       state: present
     loop:
