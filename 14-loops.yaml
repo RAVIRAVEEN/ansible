@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: install or uninstall packages
-    ansible.builtin.packages:
+    ansible.builtin.package:
       msg: " {{item}}" #default key word
       state: present
     loop:
