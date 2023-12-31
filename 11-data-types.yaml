@@ -14,19 +14,19 @@
       terrform: 1 years  
     trainer: true #boolen  
   tasks:
-     - name: print key value
-       ansible.builtin.debug:
-       msg: "name is : {{NAME}}"
+    - name: print key value
+      ansible.builtin.debug:
+      msg: "name is : {{NAME}}"
        
-     - name: print list
-       ansible.builtin.debug:
-       msg: "skills is : {{SKILLS}}"
+    - name: print list
+      ansible.builtin.debug:
+      msg: "skills is : {{SKILLS}}"
 
-     - name: print map 
-       ansible.builtin.debug:
+    - name: print map 
+      ansible.builtin.debug:
        msg: "Experience is : {{Experience}}" 
 
-     - name: boolean 
-       ansible.builtin.debug:
+    - name: boolean 
+      ansible.builtin.debug:
        msg: "trainer is : {{trainer}}"   
          
