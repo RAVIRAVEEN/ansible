@@ -3,11 +3,11 @@
   become: yes
   tasks:
   - name: install or uninstall packages
-    ansible.builtin.dnf:
+    ansible.builtin.package:
        name: "{{item}}" #default key word
        state: present
     loop:
     - {name: 'git', state: 'present'}
     - {name: 'postfix', state: 'absent'} 
     - {name: 'mysql', state: 'absent'}
-    - {name: 'nginx', state: 'presnt'}
+    - {name: 'nginx', state: 'present'}
