@@ -1,5 +1,5 @@
 - name: checking data types
-  hosts:
+  hosts: localhost
   vars:
     NAME: shiva  #key value pair
     SKILLS: # skill is a list type
