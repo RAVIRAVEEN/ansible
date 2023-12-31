@@ -12,19 +12,19 @@
       aws: 1 years
       linux: 2 years 
       terrform: 1 years  
-      trainer: true #boolen  
-      tasks:
+    trainer: true #boolen  
+    tasks:
       - name: print key value
         ansible.builtin.debug:
-         msg: "name: {{NAME}}"
+         msg: "name is : {{NAME}}"
        
       - name: print list
         ansible.builtin.debug:
-         msg: "skills: {{SKILLS}}"
+         msg: "skills is : {{SKILLS}}"
 
       - name: print map 
         ansible.builtin.debug:
-        msg: "Experience: {{Experience}}" 
+        msg: "Experience is : {{Experience}}" 
 
       - name: boolean 
         ansible.builtin.debug:
