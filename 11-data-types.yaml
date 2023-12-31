@@ -3,9 +3,9 @@
   vars:
     NAME: shiva  #key value pair
     SKILLS: # skill is a list type
-      - "devops"
-      - "aws"
-      - "linux"
+      - devops
+      - aws
+      - linux
       - terrarom
     Experience:  #map
       devops: 2 years
