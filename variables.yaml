@@ -3,5 +3,5 @@ trainer: "shiva"
 duration: "100hours"
 
 
-PERSON: "ravi  FROM FILE"
-WISHES:  "mrng  FROM FILE"
+# PERSON: "ravi  FROM FILE"
+# WISHES:  "mrng  FROM FILE"
