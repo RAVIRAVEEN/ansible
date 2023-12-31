@@ -7,7 +7,7 @@
        name: "{{item}}" #default key word
        state: present
     loop:
-    - { name: 'git', state: 'present' }
-    - { name: 'mysql', state: 'present' }
-    - { name: 'postfix', state: 'absent' }
-    - { name: 'nginx', state: 'present' }
+    - {name: 'git', state: 'present'}
+    - {name: 'mysql', state: 'present'}
+    - {name: 'postfix', state: 'absent'}
+    - {name: 'nginx', state: 'present'}
