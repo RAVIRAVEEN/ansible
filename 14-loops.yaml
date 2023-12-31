@@ -1,9 +1,10 @@
 - name: loops 
   hosts: localhost
+  become: yes
   tasks:
   - name: install or uninstall packages
     ansible.builtin.package:
-      msg: " {{item}}" #default key word
+      msg: "{{item}}" #default key word
       state: present
     loop:
     - { name: 'git', state: 'present' }
