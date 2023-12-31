@@ -11,12 +11,12 @@
     prompt: "please enter your WISHES"
     private: false #they can't see what u are typing
   vars:
-    # PERSON: "ravi raveen FROM TASK"
-    # WISHES: "mrng  FROM TASK"
+     PERSON: "ravi raveen FROM TASK"
+     WISHES: "mrng  FROM TASK"
   tasks:
    - name: check variables
      vars:
-       PERSON: "ravi  FROM PLAY"
-       WISHES:  "mrng  FROM PLAY"
+      #  PERSON: "ravi  FROM PLAY"
+      #  WISHES:  "mrng  FROM PLAY"
      ansible.builtin.debug:
        msg: "hello {{PERSON}} good {{WISHES}}"
