@@ -1,6 +1,8 @@
 
 - name:  check variables from PLAY level
   hosts: localhost
+  vars_files:
+   variables.yaml
   vars_prompt:
   - name: PERSON
     prompt: "please enter your NAME"
@@ -8,8 +10,6 @@
   - name: WISHES
     prompt: "please enter your WISHES"
     private: false #they can't see what u are typing
-  vars_files:
-   variables.yaml
   vars:
     PERSON: "ravi raveen FROM TASK"
     WISHES: "mrng  FROM TASK"
