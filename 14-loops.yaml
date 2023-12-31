@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: install or uninstall packages
-    ansible.builtin.dnf:
-      msg: "{{item}}" #default key word
+    ansible.builtin.package:
+      name: "{{item}}" #default key word
       state: present
     loop:
     - { name: 'git', state: 'present' }
