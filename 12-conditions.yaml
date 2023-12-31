@@ -7,5 +7,5 @@
       ignore_errors: true #ansible will not exit even it got error
     - name: print the user
       ansible.builtin.debug:
-      msg: "user output is {{user}}"
+       msg: "user output is {{user}}"
           
